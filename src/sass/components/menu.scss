@@ -1,0 +1,165 @@
+.menu-box {
+  width: 40vw;
+  min-height: 100vh;
+  margin-left: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
+
+  & .menu {
+    transition: 0.1s transform linear;
+    background: 0;
+    height: 32px;
+    width: 32px;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    z-index: 9;
+
+    & .bar {
+      &,
+      &::before,
+      &::after {
+        transition: 0.2s linear 0.1s, 0.2s top linear 0.2s,
+          0.2s transform linear;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: 2px;
+        content: '';
+        top: 50%;
+        right: 0;
+      }
+
+      &::before {
+        top: -0.8rem;
+      }
+
+      &::after {
+        top: 0.8rem;
+      }
+
+      &::before,
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .active .bar {
+    background: 0;
+
+    &::before {
+      transform: rotate(45deg);
+      background: #a3a3a3;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      background: #a3a3a3;
+    }
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+
+    &,
+    &::before,
+    &::after {
+      transition: 0.2s background linear 0.1s, 0.2s top linear,
+        0.2s transform linear 0.2s;
+    }
+  }
+
+  & .menu-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: calc(100% - 160px);
+    z-index: 8;
+    background-color: $yellow-color;
+    transition: 0.5s, 0.3s background linear 0.2s, 0.2s top linear,
+      0.2s transform linear 0.2s;
+    overflow: hidden;
+    padding: 160px 160px 0 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .dropdown {
+      display: inline-block;
+      min-width: 100px;
+      margin-left: auto;
+    }
+
+    & nav {
+      & ul {
+        & li {
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          & a {
+            display: inline-block;
+            padding: 10px;
+            color: $black-color;
+            font-family: $Exo;
+            font-size: $font-text;
+            font-weight: $Regular;
+            text-transform: uppercase;
+
+            &:hover {
+              background-color: $yellow-color;
+            }
+          }
+        }
+      }
+    }
+
+    & .copyright {
+      text-align: right;
+      font-size: 24px;
+      font-weight: $Regular;
+      line-height: 160px;
+      color: rgba(0, 0, 0, 0.3);
+      border-top: 2px solid $gray-light-color;
+    }
+  }
+
+  & .menu-open {
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
+
+.menu-backdrop {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0);
+  transition: background linear 0.1s;
+}
+
+.menu-backdrop-open {
+  background: rgba(0, 0, 0, 0.4);
+  transition: background linear 0.5s;
+  z-index: 2;
+}

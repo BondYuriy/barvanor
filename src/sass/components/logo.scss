@@ -1,0 +1,14 @@
+.logo {
+  width: 12%;
+  height: auto;
+  position: absolute;
+  top: 160px;
+  left: 5.56%;
+  z-index: 5;
+
+  & a {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
