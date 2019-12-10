@@ -5,7 +5,7 @@
 
   & .news-article {
     flex: 0 0 58%;
-    padding: 320px 5.5% 160px 5.5%;
+    padding: 0 5.5% 80px 5.5%;
     color: $text-color;
     font-size: $font-text;
     font-weight: $Regular;
@@ -13,29 +13,31 @@
     & .news-article-header {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
       position: relative;
 
       &::before {
         display: block;
         content: '';
-        width: 46px;
-        height: 64px;
+        width: 23px;
+        height: 32px;
         background-image: url('../images/Rectangle_3_copy_3.svg');
+        background-position: center;
+        background-size: cover;
         position: absolute;
-        left: -70px;
-        top: 10px;
+        left: -35px;
+        top: 5px;
       }
 
       & .title {
         margin: 0;
-        flex: 0 0 68%;
+        flex: 0 0 72%;
 
         & a {
           display: block;
           color: $yellow-color;
           font-family: $Exo;
-          font-size: 60px;
+          font-size: 30px;
           font-weight: $light;
         }
       }
@@ -43,14 +45,14 @@
       & .date {
         color: #a3a3a3;
         font-family: Helvetica;
-        font-size: 28px;
+        font-size: 14px;
         font-weight: 400;
-        padding-top: 23px;
+        padding-top: 15px;
       }
     }
 
     & p {
-      margin-bottom: 48px;
+      margin-bottom: 24px;
 
       &:last-child {
         margin-bottom: 0;
@@ -59,14 +61,17 @@
   }
 
   & .img-box {
-    flex: 0 0 42%;
-    min-height: 100vh;
+    width: calc(43.75vw - 80px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 80px;
 
     & img {
       display: block;
+      width: 100%;
       height: 100%;
-      min-width: 100%;
-      width: auto;
+      object-fit: cover;
     }
   }
 }

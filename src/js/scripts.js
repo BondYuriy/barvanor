@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   $('.js-menu').on('click', function() {
     $(this).toggleClass('active');
-    $('.menu-content').toggleClass('menu-open');
+    $('.menu-box').toggleClass('menu-open');
     $('.menu-backdrop').toggleClass('menu-backdrop-open');
   });
 

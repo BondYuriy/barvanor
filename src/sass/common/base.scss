@@ -17,9 +17,9 @@ body {
   height: 100%;
   position: relative;
   // font-family: $Roboto;
-  // font-weight: $light;
-  // font-size: $font-text;
-  // color: $text-color;
+  font-weight: $Regular;
+  font-size: $font-text;
+  color: $text-color;
 }
 
 ul,
@@ -39,7 +39,7 @@ a {
 
 .main {
   overflow: hidden;
-  padding: 0 160px 0 0;
+  padding: 0 80px 0 0;
 }
 
 input,
@@ -47,4 +47,12 @@ button {
   &:focus {
     outline: none;
   }
+}
+
+.category-title {
+  margin: 0;
+  color: $yellow-color;
+  font-family: $Exo;
+  font-size: $font-category;
+  font-weight: $light;
 }
