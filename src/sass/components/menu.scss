@@ -1,6 +1,5 @@
 .menu-box {
   width: calc(0vw + 80px);
-  min-height: 100vh;
   background-color: $yellow-color;
   padding: 80px 0 0 80px;
   display: flex;
@@ -8,15 +7,13 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
-  bottom: 0;
   right: 0;
   z-index: 10;
-  overflow: hidden;
+
   transition: 0.5s, 0.3s background linear 0.2s, 0.2s top linear,
     0.2s transform linear 0.2s;
 
   & .menu {
-    transition: 0.1s transform linear;
     background: 0;
     height: 21px;
     width: 22px;
@@ -88,35 +85,15 @@
     display: inline-block;
     min-width: 100px;
     margin-left: auto;
+    opacity: 0;
   }
 
-  & nav {
-    & ul {
-      & li {
-        margin-bottom: 15px;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        & a {
-          display: inline-block;
-          padding: 10px;
-          color: $black-color;
-          font-family: $Exo;
-          font-size: $font-text;
-          font-weight: $Regular;
-          text-transform: uppercase;
-
-          &:hover {
-            background-color: $yellow-color;
-          }
-        }
-      }
-    }
+  & .menu-nav {
+    opacity: 0;
   }
 
   & .copyright {
+    opacity: 0;
     text-align: right;
     font-size: 12px;
     font-weight: $Regular;
@@ -130,8 +107,20 @@
   width: 40vw;
   padding-right: 80px;
   background-color: #fff;
-  overflow: hidden;
+  overflow: visible;
   transition: 0.5s;
+
+  & .dropdown {
+    opacity: 1;
+  }
+
+  & .menu-nav {
+    opacity: 1;
+  }
+
+  & .copyright {
+    opacity: 1;
+  }
 }
 
 .menu-backdrop {
@@ -150,4 +139,10 @@
   background: rgba(0, 0, 0, 0.4);
   transition: background linear 0.3s;
   z-index: 2;
+}
+
+.copyright-mobile {
+  display: none;
+  padding: 0;
+  margin: 0;
 }

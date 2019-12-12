@@ -3,6 +3,7 @@
  */
 
 @import 'common/normalize.scss';
+@import 'common/anime.scss';
 @import 'common/variables.scss';
 @import 'common/owl.carousel.scss';
 @import 'common/base.scss';
@@ -10,6 +11,9 @@
 @import 'components/dropdown.scss';
 @import 'components/menu.scss';
 @import 'components/logo.scss';
+@import 'components/menu-nav.scss';
+@import 'common//footer.scss';
 @import 'pages/home.scss';
 @import 'pages/news.scss';
 @import 'pages/news-article.scss';
+@import 'common/responsive.scss';

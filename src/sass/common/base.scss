@@ -16,7 +16,7 @@ html {
 body {
   height: 100%;
   position: relative;
-  // font-family: $Roboto;
+  font-family: $Roboto;
   font-weight: $Regular;
   font-size: $font-text;
   color: $text-color;
@@ -40,6 +40,10 @@ a {
 .main {
   overflow: hidden;
   padding: 0 80px 0 0;
+}
+
+.sub-page {
+  padding: 0 5.56% 80px 5.56%;
 }
 
 input,

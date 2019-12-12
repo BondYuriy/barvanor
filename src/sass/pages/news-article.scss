@@ -16,9 +16,8 @@
       margin-bottom: 25px;
       position: relative;
 
-      &::before {
+      & .link {
         display: block;
-        content: '';
         width: 23px;
         height: 32px;
         background-image: url('../images/Rectangle_3_copy_3.svg');
@@ -32,14 +31,10 @@
       & .title {
         margin: 0;
         flex: 0 0 72%;
-
-        & a {
-          display: block;
-          color: $yellow-color;
-          font-family: $Exo;
-          font-size: 30px;
-          font-weight: $light;
-        }
+        color: $yellow-color;
+        font-family: $Exo;
+        font-size: 30px;
+        font-weight: $light;
       }
 
       & .date {

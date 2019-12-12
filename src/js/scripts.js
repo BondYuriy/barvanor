@@ -10,11 +10,14 @@ $(document).ready(function() {
   /* carousel */
 
   $('.owl-carousel').owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    smartSpeed: 1000,
     loop: true,
     margin: 0,
     nav: true,
     autoplay: true,
-    autoplayTimeout: 2200,
+    autoplayTimeout: 3000,
     autoplayHoverPause: false,
     responsive: {
       0: {
@@ -23,3 +26,5 @@ $(document).ready(function() {
     },
   });
 });
+
+const swup = new Swup();

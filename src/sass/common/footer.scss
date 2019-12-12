@@ -1,0 +1,27 @@
+.footer-mobule {
+  display: none;
+  width: 100%;
+  height: 867px;
+  padding: 60px;
+  position: relative;
+  overflow: hidden;
+
+  & img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  & nav ul li a {
+    color: $white-color;
+  }
+
+  & nav ul li .active {
+    color: $black-color;
+    background-color: $yellow-color;
+  }
+}

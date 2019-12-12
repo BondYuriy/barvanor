@@ -23,7 +23,7 @@ module.exports = {
   inject: {
     html: 'build/*.html',
     css: 'build/css/**/*.css',
-    js: 'build/js/**/*.js',
+    js: 'build/js/**/scripts.js',
   },
   clean: 'build/',
 };
