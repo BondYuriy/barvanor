@@ -537,3 +537,112 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .content-news-article {
+    display: block;
+    min-height: auto;
+
+    & .img-box {
+      width: 100%;
+      height: 410px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -2;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        display: block;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        overflow: hidden;
+      }
+    }
+
+    & .news-article {
+      width: 100%;
+      padding: 0 60px 60px 60px;
+      font-size: 21px;
+
+      & .news-article-header {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        height: 210px;
+        margin-bottom: 70px;
+
+        & .link {
+          width: 33px;
+          height: 43px;
+          top: 63px;
+          left: -40px;
+
+          & svg {
+            fill: $white-color;
+          }
+        }
+
+        & .title {
+          font-size: 39px;
+        }
+
+        & .date {
+          color: $white-color;
+          font-size: 18px;
+          padding-top: 0;
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 539px) {
+  .content-news-article {
+    & .news-article {
+      padding: 0 15px 30px 15px;
+      font-size: 16px;
+
+      & .news-article-header {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        height: 315px;
+        margin-bottom: 70px;
+        padding-left: 25px;
+
+        & .link {
+          width: 28px;
+          height: 40px;
+          top: 88px;
+          left: -13px;
+
+          & svg {
+            fill: $white-color;
+          }
+        }
+
+        & .title {
+          font-size: 30px;
+        }
+
+        & .date {
+          color: $white-color;
+          font-size: 16px;
+          padding-top: 0;
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+}

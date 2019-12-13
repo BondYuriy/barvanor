@@ -55,7 +55,17 @@
       <nav class="menu-nav">
         <ul>
           <li><a href="#">О НАС</a></li>
-          <li><a href="#">ПРОДУКЦИЯ</a></li>
+          <li class="sub-menu">
+            <a href="#">ПРОДУКЦИЯ</a>
+            <ul class="sub-menu-nav">
+              <li><a href="#">ВСЕ</a></li>
+              <li><a href="#">ПРИПОТОЛОЧНЫЕ</a></li>
+              <li><a href="#">ВРЕЗНЫЕ</a></li>
+              <li><a href="#">ПОДВЕСНЫЕ</a></li>
+              <li><a href="#">ТРЕКОВЫЕ </a></li>
+              <li><a href="#">ИНДИВИДУАЛЬНАЯ РАЗРАБОТКА</a></li>
+            </ul>
+          </li>
           <li><a href="#">РАЗРАБОТКА</a></li>
           <li><a href="#">УСЛУГИ</a></li>
           <li><a href="#">ЗАГРУЗКИ</a></li>
@@ -67,9 +77,26 @@
     </div>
     <main class="main">
       <div class="content-news-article">
+        <div class="img-box">
+          <img src="images/Layer_1.jpg" alt="photo" />
+        </div>
         <div class="news-article">
           <div class="news-article-header">
-            <a class="link" href="#"></a>
+            <a class="link" href="#"
+              ><svg
+                enable-background="new 0 0 256 256"
+                id="Layer_1"
+                version="1.1"
+                viewBox="0 0 256 256"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M179.199,38.399c0,1.637-0.625,3.274-1.875,4.524l-85.076,85.075l85.076,85.075c2.5,2.5,2.5,6.55,0,9.05s-6.55,2.5-9.05,0  l-89.601-89.6c-2.5-2.5-2.5-6.551,0-9.051l89.601-89.6c2.5-2.5,6.55-2.5,9.05,0C178.574,35.124,179.199,36.762,179.199,38.399z"
+                />
+              </svg>
+            </a>
             <h1 class="title">
               В Италии кукол Барби больше, чем канадцев в Канаде
             </h1>
@@ -103,11 +130,24 @@
             производство.
           </p>
         </div>
-        <div class="img-box">
-          <img src="images/Layer_1.jpg" alt="photo" />
-        </div>
       </div>
     </main>
+    <footer class="footer-mobule">
+      <img src="images/Layer_13.jpg" alt="footer image" />
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="#">О НАС</a></li>
+          <li class="sub-menu">
+            <a href="#">ПРОДУКЦИЯ</a>
+          </li>
+          <li><a href="#">РАЗРАБОТКА</a></li>
+          <li><a href="#">УСЛУГИ</a></li>
+          <li><a href="#">ЗАГРУЗКИ</a></li>
+          <li><a class="active" href="#">НОВОСТИ</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
