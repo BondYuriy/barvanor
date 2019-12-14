@@ -1,65 +1,40 @@
-.news-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 60px;
+.news-item {
+  & .item-img-box {
+    margin-bottom: 20px;
+  }
 
-  & .news-item {
-    flex: 0 0 29%;
-    margin-bottom: 45px;
-    margin-right: 3%;
+  & .item-info {
+    border-left: 1px solid #ebebeb;
+    padding: 3px 0 5px 24px;
 
-    & .item-img-box {
-      display: block;
-      margin-bottom: 20px;
+    & .date {
+      color: #a3a3a3;
+      font-size: 12px;
+      font-weight: $Regular;
+    }
 
-      & > div {
-        position: relative;
-        width: 100%;
-        padding-bottom: 100%;
+    & .title {
+      margin: 0;
 
-        & > div {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
+      & a {
+        display: block;
+        max-height: 44px;
+        color: #333333;
+        font-family: $Exo;
+        font-size: 18px;
+        font-weight: $Regular;
+        overflow: hidden;
 
-          & img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+        &:hover {
+          color: $yellow-color;
         }
       }
     }
+  }
 
-    & .item-info {
-      border-left: 1px solid #ebebeb;
-      padding: 3px 0 5px 24px;
-
-      & .date {
-        color: #a3a3a3;
-        font-size: 12px;
-        font-weight: $Regular;
-      }
-
-      & .title {
-        margin: 0;
-
-        & a {
-          display: block;
-          max-height: 44px;
-          color: #333333;
-          font-family: $Exo;
-          font-size: 18px;
-          font-weight: $Regular;
-          overflow: hidden;
-
-          &:hover {
-            color: $yellow-color;
-          }
-        }
-      }
+  &:hover {
+    & .item-img-box div div img {
+      transform: scale(1.1);
     }
   }
 }

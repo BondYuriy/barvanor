@@ -43,7 +43,7 @@ a {
 }
 
 .sub-page {
-  padding: 0 5.56% 80px 5.56%;
+  padding: 0 5.56% 60px 5.56%;
 }
 
 input,
@@ -59,4 +59,6 @@ button {
   font-family: $Exo;
   font-size: $font-category;
   font-weight: $light;
+  text-transform: uppercase;
+  line-height: 40px;
 }
