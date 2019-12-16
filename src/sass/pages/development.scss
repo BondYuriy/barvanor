@@ -10,6 +10,12 @@
   & .text {
     flex: 0 0 50%;
 
+    & p a {
+      background-color: #fec800;
+      font-size: $font-text;
+      color: $text-color;
+    }
+
     & p:last-child {
       margin-bottom: 0;
     }
