@@ -24,13 +24,14 @@
     <!-- endinject -->
   </head>
 
-  <body class="home-page-styles">
+  <body>
     <div class="logo">
-      <a href="#">
+      <a href="index.html">
         <img src="images/logo.svg" alt="logo" />
       </a>
     </div>
-    <div class="menu-box menu-open">
+    <div class="menu-backdrop"></div>
+    <div class="menu-box">
       <button class="js-menu menu" type="button">
         <span class="bar"></span>
       </button>
@@ -53,9 +54,9 @@
       </div>
       <nav class="menu-nav">
         <ul>
-          <li><a href="about.html">О НАС</a></li>
+          <li><a href="#">О НАС</a></li>
           <li class="sub-menu">
-            <a href="category.html">ПРОДУКЦИЯ</a>
+            <a href="#">ПРОДУКЦИЯ</a>
             <ul class="sub-menu-nav">
               <li><a href="#">ВСЕ</a></li>
               <li><a href="#">ПРИПОТОЛОЧНЫЕ</a></li>
@@ -65,74 +66,76 @@
               <li><a href="#">ИНДИВИДУАЛЬНАЯ РАЗРАБОТКА</a></li>
             </ul>
           </li>
-          <li><a href="development.html">РАЗРАБОТКА</a></li>
-          <li><a href="services.html">УСЛУГИ</a></li>
+          <li><a href="#">РАЗРАБОТКА</a></li>
+          <li><a href="#">УСЛУГИ</a></li>
           <li><a href="#">ЗАГРУЗКИ</a></li>
-          <li><a href="news.html">НОВОСТИ</a></li>
-          <li><a href="contacts.html">КОНТАКТЫ</a></li>
+          <li><a href="#">НОВОСТИ</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
       </nav>
       <p class="copyright">© 2019 Barvanor</p>
     </div>
     <main class="main">
-      <div class="home-carousel-box">
-        <div class="container-wh">
-          <div class="container-vp">
-            <div class="owl-carousel home-carousel owl-theme">
-              <div class="item">
-                <div class="home-card">
-                  <img src="images/Layer_3.jpg" alt="photo" />
-                  <div class="home-card-contetnt">
-                    <div class="content">
-                      <h2 class="title"><a href="#">RISE</a></h2>
-                      <span class="description">Подпотолочный светильник</span>
-                    </div>
-                    <a href="#" class="btn btn-white">Подробней</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="home-card">
-                  <img src="images/Layer_8_copy_2@2x.jpg" alt="photo" />
-                  <div class="home-card-contetnt">
-                    <div class="content">
-                      <h2 class="title"><a href="#">CADENCE YOUNG</a></h2>
-                      <span class="description">Подпотолочный светильник</span>
-                    </div>
-                    <a href="#" class="btn btn-white">Подробней</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="home-card">
-                  <img src="images/Layer_9_copy@2x.jpg" alt="photo" />
-                  <div class="home-card-contetnt">
-                    <div class="content">
-                      <h2 class="title"><a href="#">ALBUS</a></h2>
-                      <span class="description">Подпотолочный светильник</span>
-                    </div>
-                    <a href="#" class="btn btn-white">Подробней</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="home-card">
-                  <img src="images/Layer_10@2x.jpg" alt="photo" />
-                  <div class="home-card-contetnt">
-                    <div class="content">
-                      <h2 class="title"><a href="#">RISE</a></h2>
-                      <span class="description">Подпотолочный светильник</span>
-                    </div>
-                    <a href="#" class="btn btn-white">Подробней</a>
-                  </div>
-                </div>
-              </div>
+      <div class="contacts-box">
+        <div class="contacts">
+          <h1 class="category-title">КОНТАКТЫ</h1>
+          <div class="contact">
+            <p class="adress">
+              <span class="contact-mobile">Приходите в гости!</span>
+              Украина, 03680 <br />
+              г. Киев, б-р Вацлава Гавела <br />
+              (Ивана Лепсе) 8, корпус 9
+            </p>
+            <div class="contact-form">
+              <h2 class="title">Написать нам</h2>
+              <form action="#">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="email" placeholder="Ваш E-Mail" />
+                <textarea placeholder="Сообщение"></textarea>
+                <input
+                  class="btn btn-yellow"
+                  type="button"
+                  value="Отправить сообщение"
+                />
+              </form>
             </div>
+            <div class="contact-block">
+              <a class="tel" href="tel:+380443623288">+380 (44) 362-32-88</a>
+              <a class="email" href="mailto:sale@barvanor.com.ua"
+                >sale@barvanor.com.ua</a
+              >
+              <span class="timetable"
+                >Пн-Пт: 9:00 - 19:00, Сб-Вс: Выходной</span
+              >
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.729138866656!2d30.414150015731273!3d50.44614567947479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc14c8e5c76f%3A0xb81a14b818036f38!2z0LHRg9C70YzQstCw0YAg0JLQsNGG0LvQsNCy0LAg0JPQsNCy0LXQu9CwLCA4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1576515073154!5m2!1sru!2sua"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen=""
+            ></iframe>
           </div>
         </div>
       </div>
-      <p class="copyright-mobile">© 2019 Barvanor</p>
     </main>
+    <footer class="footer-mobule">
+      <img src="images/Layer_88@2x.jpg" alt="footer image" />
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="#">О НАС</a></li>
+          <li class="sub-menu">
+            <a href="#">ПРОДУКЦИЯ</a>
+          </li>
+          <li><a href="#">РАЗРАБОТКА</a></li>
+          <li><a href="#">УСЛУГИ</a></li>
+          <li><a href="#">ЗАГРУЗКИ</a></li>
+          <li><a class="active" href="#">НОВОСТИ</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -154,8 +157,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/swup.min.js"></script>
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
     <!-- endinject -->
