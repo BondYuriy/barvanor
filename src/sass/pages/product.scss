@@ -1,0 +1,377 @@
+.product-style {
+  & .logo {
+    padding-bottom: 30px;
+  }
+}
+
+.product-box {
+  display: flex;
+  padding-bottom: 20px;
+
+  & .product-img-box {
+    flex: 0 0 52%;
+    padding: 0 70px 0 80px;
+    border-right: 1px solid #ebebeb;
+
+    & .product-img-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 20px;
+      position: relative;
+
+      & .link {
+        display: block;
+        width: 30px;
+        height: 32px;
+        position: absolute;
+        left: -45px;
+        top: 4px;
+
+        & svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          fill: #a3a3a3;
+        }
+      }
+
+      & .title {
+        margin: 0;
+        color: $yellow-color;
+        font-family: $Exo;
+        font-size: 30px;
+        font-weight: $light;
+        text-transform: uppercase;
+      }
+
+      & .text {
+        margin: 0;
+        color: #a3a3a3;
+        font-size: 12px;
+      }
+    }
+
+    & .product-carousel-box {
+      display: block;
+      margin-bottom: 20px;
+
+      & .container-wh {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+
+        & .container-vw {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          // overflow: hidden;
+
+          & .display {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          & .product-carousel {
+            & .owl-nav {
+              display: inline-block;
+              position: absolute;
+              right: 0;
+              bottom: -66px;
+
+              & .owl-prev,
+              .owl-next {
+                width: 40px;
+                height: 40px;
+                border-radius: 3px;
+                border: 1px solid #ebebeb;
+                background-color: $white;
+
+                & span {
+                  transition: 0s;
+                  display: block;
+                }
+
+                &:hover {
+                  border: 1px solid $yellow-color;
+                  background-color: $yellow-color;
+
+                  & span {
+                    transition: 0s;
+                    color: $white-color;
+                  }
+                }
+
+                &:active {
+                  border: 1px solid #ebebeb;
+                  background-color: $white;
+
+                  & span {
+                    transition: 0s;
+                    color: #ebebeb;
+                  }
+                }
+              }
+
+              & .owl-prev {
+                margin-right: 10px;
+              }
+            }
+
+            & .owl-dots {
+              height: 7px;
+              display: flex;
+              align-items: center;
+              position: absolute;
+              bottom: 20px;
+              left: 50%;
+              transform: translateX(-50%);
+
+              & .owl-dot {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $text-color;
+                margin-right: 15px;
+
+                &:last-child {
+                  margin-right: 0;
+                }
+              }
+
+              & .active {
+                width: 7px;
+                height: 7px;
+                background-color: #fec800;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .product-sizes {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      & li {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        & a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 3px;
+          border: 1px solid #ebebeb;
+          background-color: $white-color;
+          color: #9a9998;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+
+          &:hover {
+            border: 1px solid $black-color;
+            color: $black-color;
+          }
+        }
+
+        & .active {
+          border: 1px solid $yellow-color;
+          background-color: $yellow-color;
+          color: $white-color;
+
+          &:hover {
+            border: 1px solid $yellow-color;
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  & .product-info-box {
+    flex: 0 0 48%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+
+    & .description {
+      height: 84px;
+      overflow: hidden;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    & .feature {
+      flex-grow: 1;
+
+      & .title {
+        color: $black-color;
+        font-family: $Exo;
+        font-size: 24px;
+        font-weight: $light;
+      }
+
+      & .feature-list {
+        & .feature-item {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          & .name {
+            flex: 0 0 56%;
+            display: flex;
+            align-items: flex-end;
+            font-size: 14px;
+            color: #a3a3a3;
+
+            & span {
+              margin-right: 20px;
+            }
+
+            &::after {
+              display: inline-block;
+              content: '';
+              flex-grow: 1;
+              height: 1px;
+              background-color: #ebebeb;
+              margin-bottom: 6px;
+            }
+          }
+
+          & .value {
+            flex: 0 0 40%;
+          }
+
+          & .product-color {
+            display: flex;
+            padding-bottom: 6px;
+
+            & li {
+              width: 24px;
+              height: 24px;
+              border: 1px solid #e1e1e1;
+              margin-right: 6px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #f7f7f7;
+
+              &:last-child {
+                border: 0;
+                width: auto;
+                height: auto;
+                margin-right: 0;
+                background-color: $white;
+                margin-left: 9px;
+              }
+
+              & a {
+                display: block;
+                width: 16px;
+                height: 16px;
+              }
+
+              & .white {
+                background-color: $white;
+              }
+
+              & .black {
+                background-color: $black;
+              }
+
+              & .red {
+                background-color: #a23c3c;
+              }
+
+              & p {
+                margin: 0;
+                position: relative;
+                padding-left: 15px;
+                border-left: 1px solid #e1e1e1;
+                font-size: 14px;
+                line-height: 25px;
+
+                span {
+                  display: block;
+                  width: 300px;
+                  height: 0;
+                  overflow: hidden;
+                  opacity: 0;
+                  position: absolute;
+                  right: -50px;
+                  background-color: #fff;
+                  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+                  padding-left: 10px;
+                  padding-right: 10px;
+                }
+
+                &:hover span {
+                  height: auto;
+                  opacity: 1;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
+              }
+            }
+
+            & .active {
+              border: 2px solid $yellow-color;
+            }
+          }
+        }
+      }
+    }
+
+    & .downloads {
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 2px solid #ebebeb;
+
+      & .title {
+        color: $black-color;
+        font-family: $Exo;
+        font-size: 24px;
+        font-weight: $light;
+        margin-right: 40px;
+      }
+
+      & .downloads-list {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .downloads-item {
+          display: block;
+          flex: 0 0 40px;
+          height: 40px;
+          border-radius: 3px;
+          background-color: $gray-light-color;
+
+          & span {
+            display: none;
+          }
+        }
+
+        & .active {
+          background-color: #fdc707;
+        }
+      }
+    }
+  }
+}

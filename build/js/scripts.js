@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   /* carousel */
 
-  $('.owl-carousel').owlCarousel({
+  $('.home-carousel').owlCarousel({
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     smartSpeed: 1000,
@@ -19,6 +19,24 @@ $(document).ready(function() {
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+
+  $('.product-carousel').owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    smartSpeed: 1000,
+    loop: true,
+    margin: 0,
+    nav: true,
+    navText: [
+      "<i class='fa fa-long-arrow-left'></i>",
+      "<i class='fa fa-long-arrow-right'></i>",
+    ],
     responsive: {
       0: {
         items: 1,
