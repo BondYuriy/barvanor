@@ -33,15 +33,16 @@ $(document).ready(function() {
     loop: true,
     margin: 0,
     nav: true,
-    navText: [
-      "<i class='fa fa-long-arrow-left'></i>",
-      "<i class='fa fa-long-arrow-right'></i>",
-    ],
+    navText: ['❮', '❯'],
     responsive: {
       0: {
         items: 1,
       },
     },
+  });
+
+  $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
   });
 });
 
