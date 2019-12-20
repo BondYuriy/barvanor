@@ -24,6 +24,8 @@
         margin: 0;
         flex: 0 0 50%;
         font-size: 14px;
+        font-family: $Exo;
+        font-weight: $light;
 
         & .contact-mobile {
           display: none;
@@ -122,9 +124,9 @@
 
         & .timetable {
           color: #a3a3a3;
-          font-family: Helvetica;
           font-size: 14px;
-          font-weight: 400;
+          font-family: $Exo;
+          font-weight: $light;
         }
       }
     }

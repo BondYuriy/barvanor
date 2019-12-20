@@ -46,4 +46,4 @@ $(document).ready(function() {
   });
 });
 
-const swup = new Swup();
+new WOW().init();

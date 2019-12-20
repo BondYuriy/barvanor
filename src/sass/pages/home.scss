@@ -91,7 +91,7 @@
               display: block;
               color: $black-color;
               font-family: $Exo;
-              font-size: 16px;
+              font-size: 32px;
               font-weight: $Regular;
               text-transform: uppercase;
             }
@@ -100,8 +100,9 @@
           & .description {
             display: block;
             color: $text-color;
-            font-size: 12px;
-            font-weight: $Regular;
+            font-size: 13px;
+            font-family: $Exo;
+            font-weight: $light;
             margin-top: 20px;
           }
         }
